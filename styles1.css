@@ -1,0 +1,177 @@
+/*----Login Page----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(14, 12, 12, 0.7),rgba(55, 51, 51, 0.7)),url(bb.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    left: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 40px;
+    border: 1px solid #d4cfde;
+    backdrop-filter: blur(10px);
+}
+.formwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+.wrapper.active .formwrapper.SignIn{
+    transform: scale(0) translate(-300px, 500px);
+}
+.wrapper .formwrapper.SignUp{
+    position: absolute;
+    top: 0;
+    transform: scale(0) translate(200px, -500px);
+}
+.wrapper.active .formwrapper.SignUp{
+    transform: scale(1) translate(0,0);
+}
+h2{
+    font-size: 2em;
+    color: #fdfcff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top: -5px; 
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember-forget{
+    margin: -5px 0 15px 5px;
+
+}
+.remember-forget label{
+    color: #fff;
+    font-size: 14px;
+}
+.remember-forget label input{
+   accent-color: rgb(76, 113, 206);
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid rgb(119, 159, 240);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.SignUp-link{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0;
+}
+.SignUp-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.SignUp-link p a:hover{
+    text-decoration: underline;
+}
+.std h1{
+    color: rgb(252, 252, 252);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   text-align: center;
+  
+}
+.std img{
+    width: 20%;
+    height:30%;
+   position: absolute;
+    top: 70px;
+    
+   right: -270px;
+   left: 990px;
+    transform: translate(-50%,-50%);
+   text-align: center;
+}
+.std .bt{
+    color: rgb(254, 188, 244);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.std span{
+    color: rgb(220, 81, 81);
+}
